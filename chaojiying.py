@@ -49,7 +49,7 @@ class Chaojiying_Client(object):
 
 
 if __name__ == '__main__':
-    chaojiying = Chaojiying_Client('yixinyiyi', 'chenxin2001', '917877')  # 用户中心>>软件ID 软件KEY 	de14fc81b365a7ad975403e0922cb6f8
+    chaojiying = Chaojiying_Client('超级鹰账号', '超级鹰密码', '软件ID')  # 用户中心>>软件ID 软件KEY 	de14fc81b365a7ad975403e0922cb6f8
     im = open('../练习/a.jpg', 'rb').read()  # 本地图片文件路径 来替换 a.jpg 有时WIN系统须要//
     info = chaojiying.PostPic(im, 8001)  # 8001 验证码类型
     if info['err_str'] == 'OK':
