@@ -18,8 +18,9 @@ class log_in:
         # CA:超级鹰account；CP：超级鹰password；SI：超级鹰softID；
         # User：12306用户名；Password：12306密码。
         # 1.建立连接        用户      密码      端口          数据库         编码
-        conn = pymysql.connect(user='root', password='xinyi920', port=3306,
+        conn = pymysql.connect(user='root', password='', port=3306,
                                database='12306_user_info', charset='utf8')
+        # 在自己的mysql数据库中，创建一个数据库（12306_user_info）来存储信息，输入自己的数据库的密码
         # 2.创建游标对象
         cur = conn.cursor()
         # 3.使用游标对象execute方法
